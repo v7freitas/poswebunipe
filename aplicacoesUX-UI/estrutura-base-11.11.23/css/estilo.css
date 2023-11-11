@@ -21,6 +21,7 @@ footer {
 
 /*------------ CSS - INLINE BLOCK ----------------*/
 
+/*
 main { 
     background: pink; 
     width: 70%; 
@@ -39,8 +40,55 @@ footer {
     background: gray; 
     min-height: 150px;
 }
+*/
 
 /*-------------- CSS - FLEX ------------------*/
+body{
+    margin: 0;
+}
 
+.page {
 
+}
 
+.page header {
+    background-color: #ccc;
+    height: 100px;
+}
+
+.page header .content-header{
+    width: 100%;
+}
+
+.page .container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.page .container main { 
+    background: pink;
+    display: flex;
+    padding: px;
+    width: calc(100% - 200px);
+}
+
+.caixas{
+    margin: 10px;
+    background-color: blue;
+}
+
+.page .container aside { 
+    background: green;
+    width: 200px;
+} 
+
+.page footer { 
+    background: gray; 
+}  
+
+@media screen and (min-width:800px) {
+    .page .container, .page footer .content-footer, .page header .content-header{ 
+        margin: 0 auto;
+        width: 800px;
+    }
+}
