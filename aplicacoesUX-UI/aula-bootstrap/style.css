@@ -1,0 +1,21 @@
+*{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+header{
+    justify-content: space-between;
+}
+
+.nav .nav-item{
+    padding-left: 10px;
+}
+
+.informacao-filme{
+    margin-left: 48px;
+}
+
+.em-breve{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
