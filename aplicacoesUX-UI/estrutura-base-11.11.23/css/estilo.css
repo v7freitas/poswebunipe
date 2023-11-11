@@ -1,0 +1,46 @@
+/* ---------- CSS - BLOCK ------------- */
+
+/*
+main {
+    background: pink;
+    width: 70%;
+    float: left; /
+}
+
+aside {
+    background: green;
+    width: 30%;
+    float: left; 
+}
+
+footer {
+    background: gray;
+    clear: both; 
+}
+*/
+
+/*------------ CSS - INLINE BLOCK ----------------*/
+
+main { 
+    background: pink; 
+    width: 70%; 
+    display: inline-block; 
+    vertical-align: top; 
+} 
+
+aside { 
+    background: green; 
+    width: 30%; 
+    display: inline-block;  
+    margin-left: -4px; 
+} 
+
+footer { 
+    background: gray; 
+    min-height: 150px;
+}
+
+/*-------------- CSS - FLEX ------------------*/
+
+
+
