@@ -2,20 +2,83 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color:#cccccc
+}
+
 header{
+    background-color: #7E2626;
+}
+
+header>div{
     justify-content: space-between;
+}
+
+h1, h2{
+    font-family: 'Righteous', sans-serif;
+}
+
+header .nav-link{
+    color: #ffffff;
+}
+
+header .nav-link:hover{
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .nav .nav-item{
     padding-left: 10px;
 }
 
+#sessoes>div{
+    background-color: hsla(0, 0%, 47%, 0.8);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#sessoes .dias:hover{
+    color: #7E2626;
+    cursor: pointer;
+}
+
+#conteudo{
+    background-color: #2F2F2F;
+}
+
+#programacao img{
+    max-height: 500px;
+}
+
 .informacao-filme{
     margin-left: 48px;
+}
+
+h3{
+    border-bottom:1px solid #fff;
+}
+
+h5{
+    border: 1px solid #ffffff;
+    width: min-content;
+}
+
+h6{
+    font-style: italic;
+}
+
+.legenda, .sala{
+    background-color: #7E2626;
 }
 
 .em-breve{
     height: 300px;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    background-color: #2F2F2F;
 }
