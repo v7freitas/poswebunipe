@@ -1,6 +1,6 @@
-*{
+/*{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-}
+}*/
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -50,6 +50,7 @@ header .nav-link:hover{
 
 #programacao img{
     max-height: 500px;
+    width: 338px;;
 }
 
 .informacao-filme{
@@ -57,7 +58,7 @@ header .nav-link:hover{
 }
 
 h3{
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid #ffffff;
 }
 
 h5{
@@ -71,6 +72,22 @@ h6{
 
 .legenda, .sala{
     background-color: #7E2626;
+}
+
+.informacao-filme button.btn{
+    border: 1px solid #ffffff;
+}
+
+button.btn span.horario{
+    color: #ffffff;
+}
+
+button.btn:hover span.horario{
+    display: none;
+}
+
+button.btn:hover:before{
+    content: "COMPRAR";
 }
 
 .em-breve{
