@@ -1,6 +1,6 @@
-/*{
+*{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-}*/
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -88,6 +88,10 @@ button.btn:hover span.horario{
 
 button.btn:hover:before{
     content: "COMPRAR";
+}
+
+.carousel .carousel-inner img{
+    max-height: 959px;
 }
 
 .em-breve{
