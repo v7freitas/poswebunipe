@@ -18,18 +18,23 @@
         <header id="cabecalho" class="p-4 sticky-top">
             <div class="container d-flex">
                 <h1>Cine Town</h1>
-                <nav class="navbar">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#programacao">Programação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#cadastro">Cadastro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mais-informacoes">Mais informações</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-sm">
+                    <div class="text-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#programacao">Programação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#cadastro">Cadastro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mais-informacoes">Mais informações</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -38,22 +43,22 @@
                     <div class="container">
                         <h2 class="p-2">Sessões</h2>
                         <div class="row">
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Segunda-feira
                             </div>
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Terça-feira
                             </div>
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Quarta-feira
                             </div>
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Quinta-feira
                             </div>
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Sexta-feira
                             </div>
-                            <div class="col-2 fw-bold dias border-top pt-1 pb-1">
+                            <div class="col-2 fw-bold dias border-top p-2">
                                 Outra data
                             </div>
                         </div>
@@ -62,7 +67,7 @@
                 <section id="programacao" class="mt-5">
                     <div class="container">
                         <h2 class="pt-3 pb-4">Programação</h2>
-                        <div id="filmes-disponiveis" class="d-flex p-4 mb-5 rounded">
+                        <div class="filmes-disponiveis d-flex p-4 mb-5 rounded">
                             <img class="rounded" src="./images/format-arw-PXjQaGxi4JA-unsplash.jpg">
                             <div class="informacao-filme w-100">
                                 <h3 class="pb-2">Spider Man</h3>
@@ -91,7 +96,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div id="filmes-disponiveis" class="d-flex p-4 mb-5 rounded">
+                        <div class="filmes-disponiveis d-flex p-4 mb-5 rounded">
                             <img class="rounded" src="./images/chase-yi-hO8h5miJ-Yc-unsplash.jpg">
                             <div class="informacao-filme w-100">
                                 <h3 class="pb-2">Looney Tunes Live Action</h3>
@@ -120,7 +125,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div id="filmes-disponiveis" class="d-flex p-4 mb-5 rounded">
+                        <div class="filmes-disponiveis d-flex p-4 mb-5 rounded">
                             <img class="rounded" src="./images/venus-major-LtDKx9ICQuI-unsplash.jpg">
                             <div class="informacao-filme w-100">
                                 <h3 class="pb-2">Judy</h3>
@@ -179,7 +184,7 @@
                             <span class="d-block mb-2">Faça seu login:</span>
                             <button class="btn btn-danger mb-4" type="button">Login</button>
                             <h3 class="pt-2 pb-2">Ainda não é cadastrado?</h3>
-                            <button class="btn btn-danger" type="button">Cadastre-se</button>
+                            <button class="btn btn-danger" type="button"><a target="_blank" href="./cadastro.html">Cadastre-se</a></button>
                             <div class="text-center em-breve d-flex mt-5 rounded">
                                 <p class="w-100">EM BREVE</p>
                             </div>

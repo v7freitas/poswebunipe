@@ -79,15 +79,15 @@ button.btn span.horario{
     color: #ffffff;
 }
 
-#filmes-disponiveis{
+.filmes-disponiveis{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#filmes-disponiveis button.btn:hover span.horario{
+.filmes-disponiveis button.btn:hover span.horario{
     display: none;
 }
 
-#filmes-disponiveis button.btn:hover:before{
+.filmes-disponiveis button.btn:hover:before{
     content: "COMPRAR";
 }
 
@@ -111,6 +111,11 @@ button.btn span.horario{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 footer{
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -131,3 +136,34 @@ footer h4{
     font-family: 'Righteous', sans-serif;
 }
 
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 576px) {
+    
+    header>div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav{
+        display: block;
+    }
+
+    .filmes-disponiveis{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    header>div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav{
+        display: flex;
+    }
+}
