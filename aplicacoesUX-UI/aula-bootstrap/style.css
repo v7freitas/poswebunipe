@@ -151,8 +151,12 @@ footer h4{
         display: block;
     }
 
-    .filmes-disponiveis{
-        display: block;
+    .informacao-filme{
+        padding-top: 24px;
+    }
+
+    h3{
+        border-bottom:none;
     }
 }
 
