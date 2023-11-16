@@ -1,6 +1,6 @@
-*{
+/*{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-}
+}*/
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -25,8 +25,10 @@ header .nav-link{
 }
 
 header .nav-link:hover{
-    color: #ffffff;
-    text-decoration: underline;
+    color: #7E2626;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .nav .nav-item{
@@ -61,11 +63,6 @@ h3{
     border-bottom:1px solid #ffffff;
 }
 
-h5{
-    border: 1px solid #ffffff;
-    width: min-content;
-}
-
 h6{
     font-style: italic;
 }
@@ -82,24 +79,55 @@ button.btn span.horario{
     color: #ffffff;
 }
 
-button.btn:hover span.horario{
+#filmes-disponiveis{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#filmes-disponiveis button.btn:hover span.horario{
     display: none;
 }
 
-button.btn:hover:before{
+#filmes-disponiveis button.btn:hover:before{
     content: "COMPRAR";
 }
 
 .carousel .carousel-inner img{
     max-height: 959px;
+    border: 1px solid black;
 }
 
 .em-breve{
     height: 300px;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/serge-kutuzov-meqVd5zwylI-unsplash.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.em-breve p{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 3em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 footer{
-    background-color: #2F2F2F;
+    background-color: rgba(0, 0, 0, 0.9);
 }
+
+footer ul{
+    padding-left: 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer li{
+    color: rgb(50, 50, 255)
+}
+
+footer h4{
+    font-family: 'Righteous', sans-serif;
+}
+
