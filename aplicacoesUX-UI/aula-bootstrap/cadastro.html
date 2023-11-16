@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Cine Town</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="text-center">Cadastro Cine Town</h1>
+        <h4 class="text-center">Garanta vantagens e concorra a prêmios</h4>
+        <form>
+            <div class="row">
+                <div class="col-12">
+                    <label for="nome" class="form-label">Nome completo:</label>
+                    <input required type="text" id="nome" class="form-control mb-3">
+                </div>
+                <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone: <small>(opcional)</small></label>
+                    <input type="tel" class="form-control mb-3" id="telefone" placeholder="(  ) _____ - ____">
+                </div>
+                <div class="col-md-6">
+                    <label for="cpf" class="form-label">CPF:</label>
+                    <input required type="text" class="form-control mb-3" id="cpf" placeholder="___.___.___ - __ ">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input required type="email" class="form-control mb-3" id="email">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input required class="form-check-input" type="checkbox" id="termos">
+                        <label class="form-check-label mb-3" for="flexCheckDefault">
+                        Li e concordo com os termos
+                        </label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-lg btn-danger w-50 m-3" type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

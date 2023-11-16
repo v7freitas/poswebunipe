@@ -1,0 +1,22 @@
+*{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background-color: #cccccc;
+}
+
+.container{
+    margin-top: 5%;
+    background-color: #ffffff;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .container{
+        width: 80%;
+    }
+    
+}
