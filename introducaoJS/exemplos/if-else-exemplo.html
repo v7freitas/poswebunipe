@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const weekDays = () => {
+            const days = new Date().getDay();
+            if(days === 0) {
+                console.log('Hoje é domingo')
+            }
+            else if(days === 6) {
+                console.log('Hoje é Sábado')
+            }
+            else if(days === 5){
+                console.log('Hoje é sexta')
+            }
+
+
+            switch(days) {
+                case 6:
+                console.log('Hoje é Sábado');
+                break;
+                default:
+                console.log('Nenhum dia selecionado');
+                break;
+            }
+
+        }
+
+        weekDays()
+
+
+        //booleanos
+        const isBooleanFunc = () => true
+        const hasBooleanFunc = () => true
+        const canBooleanFunc = () => true
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">meu cabeçalho</h1>
+    <h2 class="titulo" id="h2">cabeçalho</h2>
+    <a href="#">Meu link</a>
+    <div class="container">
+        <p class="texto-teste">texto teste</p>
+    </div>
+
+    
+    <script>
+        //por tag
+        const tagH1 = document.getElementsByTagName('h1')  
+        console.log(tagH1)
+        //por id
+        const idH2 = document.getElementById('h2')
+        console.log(idH2)
+        //por class
+        const classElements = document.getElementsByClassName('titulo')
+        console.log(classElements)
+        //query selector - seleciona como no CSS
+        const getQuerySelectorAll = document.querySelectorAll('.titulo')
+        console.log(getQuerySelectorAll)
+        //sleeciona so o primeiro
+        const getQuerySelector = document.querySelector('.titulo')
+        console.log(getQuerySelector)
+        //create element
+        const createP = document.createElement('p')
+        console.log(createP)
+        //adiciona texto
+        createP.innerText = 'Um texto qualquer'
+        //adiciona classe
+        createP.classList.add('texto')
+        //adicionar id
+        createP.id = 'textoid'
+        //adicionar um atributo ou remover
+        //adcionar um estilo (adicionando o p na div.container)
+        createP.setAttribute('role', 'text')
+        createP.removeAttribute('role')
+        const container = document.querySelector('.container')
+        container.appendChild(createP)
+        //<!--pega um elemnto pai-->
+        const getP = document.querySelector('.texto-teste')
+        const getFather = getP.parentNode;
+        getFather.classList.add('teste') //adiciona a classe teste no pai do getP
+        console.log(getFather)
+        //pega um filho
+        
+
+
+
+
+    </script>
+</body>
+</html>
