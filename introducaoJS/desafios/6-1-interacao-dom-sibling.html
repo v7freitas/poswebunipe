@@ -26,29 +26,62 @@
 
   <script>
 
-    const listaTarefas = document.querySelector('#listaTarefas')
-    document.getElementById('listaTarefas').addEventListener('click', (event) => {
-      //logamos o event
+      const listaTarefas = document.querySelectorAll('#listaTarefas li');
 
-      console.log('event', event)
-      const allTasks = document.querySelectorAll('#listaTarefas li');
+        listaTarefas.forEach((tarefa, index) => {
+          tarefa.addEventListener('click', function() {
+          const tarefaConcluida = tarefa.classList.toggle('completed');
+          const highlightTarefa = tarefa.classList.remove('highlight');
+          
+            if(tarefaConcluida) {
+              const proximaTarefa = tarefa.nextElementSibling;
+              proximaTarefa.classList.add('highlight');
+            }
 
-      allTasks.forEach((task) => task.classList.remove('highlight'))
-      allTasks.forEach(element => {
+          if(tarefaConcluida) {
+            
+          }
+          })
+        })
 
-        console.log(element)
-        element.classList.toggle('.completed');
+      
 
-        const nexTask = event.target.nextElementSibling;
-        const previousTask = event.target.previousElementSibling;
+      
 
-        if(nexTask) {
-          nexTask.classList.add('highlight')
-        }
 
-        console.log(previousTask);
-      });
-    })
+
+      
+    
+
+
+      
+
+
+      
+        
+    // const listaTarefas = document.querySelector('#listaTarefas')
+    // document.getElementById('listaTarefas').addEventListener('click', (event) => {
+    //   //logamos o event
+
+    //   console.log('event', event)
+    //   const allTasks = document.querySelectorAll('#listaTarefas li');
+
+    //   allTasks.forEach((task) => task.classList.remove('highlight'))
+    //   allTasks.forEach(element => {
+
+    //     console.log(element)
+    //     element.classList.toggle('.completed');
+
+    //     const nexTask = event.target.nextElementSibling;
+    //     const previousTask = event.target.previousElementSibling;
+
+    //     if(nexTask) {
+    //       nexTask.classList.add('highlight')
+    //     }
+
+    //     console.log(previousTask);
+    //   });
+    // })
     
     // Adicionamos um evento de clique à lista de tarefas
     // logamos o event

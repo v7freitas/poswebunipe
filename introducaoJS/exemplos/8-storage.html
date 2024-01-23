@@ -1,0 +1,40 @@
+<!-- Adiciona um elemento no localStorage -->
+<!-- Atualiza um elemento no localStorage -->
+<!-- Apaga um elemento no localStorage -->
+<!-- Adiciona um elemento no sessionStorage -->
+<!-- Atualiza um elemento no sessionStorage -->
+<!-- Apaga um elemento no sessionStorage -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  </head>
+  <body>
+    <h1 id="t1" class="titulo" >Meu cabeçalho</h1>
+    <a href="#" id="link">Meu link</a>
+    <footer> 
+      <span>opa</span>
+      <div>epa</div>
+    </footer> 
+  <script>
+
+    const localStorage = window.localStorage;
+    const pessoa = {nome: 'Joao', idade: 20};
+    //Adiciona um item no localStorage
+    localStorage.setItem('storage1', 'João');
+    localStorage.setItem('storage2', 20);
+    localStorage.setItem('storage3', JSON.stringify(pessoa));
+    //Pega um item no localStorage
+    const getStorage1 = localStorage.getItem('storage1');
+    console.log(getStorage1);
+    //atualiza um item no localStorage
+    localStorage.setItem('storage1', 'Maria');
+    //apagar um item no localStorage
+    localStorage.removeItem('storage2');
+    //limpa o localStorage
+      //localStorage.clear();
+
+    //Adiciona um item no sessionStorage
+    
+  </script>  
+  </body>
+</html>
