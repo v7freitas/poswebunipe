@@ -1,8 +1,10 @@
 package br.edu.unipe.pos.api.model;
 
+import br.edu.unipe.pos.api.validator.EmailValidation;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.br.CPF;
 
 import java.io.Serializable;
 
@@ -19,5 +21,9 @@ public class Atleta implements Serializable {
     private String nome;
     private Integer anoNascimento;
     private String esporte;
+    @EmailValidation
+    private String email;
+    @CPF
+    private String cpf;
 
 }

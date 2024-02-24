@@ -1,5 +1,6 @@
 package br.edu.unipe.pos.api.controller;
 
+import br.edu.unipe.pos.api.client.ViaCepClient;
 import br.edu.unipe.pos.api.model.Atleta;
 import br.edu.unipe.pos.api.service.AtletaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,9 @@ public class AtletaController {
 
     @Autowired
     private AtletaService service;
+
+    @Autowired
+    private ViaCepClient viaCepClient;
 
     @PostMapping
     public ResponseEntity<Atleta> cadastrar(@RequestBody Atleta atleta){
@@ -46,5 +50,13 @@ public class AtletaController {
     @GetMapping("/nome/{nome}")
     public ResponseEntity<List<Atleta>> listarPorNome(@PathVariable String nome){
         return ResponseEntity.ok(service.listarPorNome(nome));
+    }
+
+    @GetMapping("/cep/{cep}")
+    public ResponseEntity<String> consultarCepAtleta(@PathVariable String cep){
+
+        var cepResponse = viaCepClient.consultaCep(cep);
+
+        return ResponseEntity.ok(cepResponse);
     }
 }
