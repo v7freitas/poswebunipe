@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #3C3E44;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3C3E44;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: #0CAFC4;
+    transition: all ease .2s;
+
+}
+
+.nav-link:hover {
+    font-weight: 500;
+    color:#FF9800;
+}
+
+.card{
+    display: flex;
+    width: fit-content;
+}
+
+.card-img-top {
+    width: 300px;
+}
+
+.character-link {
+    margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+
